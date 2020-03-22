@@ -12,6 +12,10 @@ if (isset($_GET['url']))
 		case 'lihat_pengaduan';
 		include 'lihat_pengaduan.php';
 		break;
+
+		case 'detail_pengaduan';
+		include 'detail_pengaduan.php';
+		break; 
 	}
 }
 else

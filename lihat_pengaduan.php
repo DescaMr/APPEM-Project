@@ -48,9 +48,10 @@
                   </thead>
                     <?php
                     require 'koneksi.php';
+                    
 
-                    $sqli = mysqli_query($koneksi, "select * from pengaduan where nik ='$_SESSION[nik]'");
-
+                    $sqli = mysqli_query($koneksi, "select * from pengaduan where nik = '$_SESSION[`nik`]'");
+                    var_dump ($_SESSION);
                     while ($data = mysqli_fetch_array($sqli)) {
                     
                     ?>

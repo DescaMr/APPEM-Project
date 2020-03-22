@@ -1,3 +1,11 @@
+<?php
+
+session_start();
+if(!isset($_SESSION['nama']))
+{
+  die("Anda Belum Login,Silahkan Login terlebih dahulu");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 

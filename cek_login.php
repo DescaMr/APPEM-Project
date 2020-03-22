@@ -4,10 +4,10 @@ require 'koneksi.php';
 $user = $_POST['username'];
 $pass = $_POST['password'];
 
-$sqli = mysqli_query ("select * from masyarakat where username='$user' and password='$pass'");
+$sqli = mysqli_query ($koneksi, "select * from masyarakat where username='$user' and password='$pass'");
 $cek = mysqli_num_rows($sqli);
 
- if ($cek>0);
+ if ($cek>0)
 
  {
  	$data = mysqli_fetch_array($sqli);
